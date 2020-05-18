@@ -1,0 +1,20 @@
+nav{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    background-color: #F7A26D;
+    height:90px;
+
+}
+.container{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+.jumbotron{
+    background-image: url("images/banner.png");
+    height:300px;
+}
+
+#submit{
+    background-color: #F7A26D;
+}
