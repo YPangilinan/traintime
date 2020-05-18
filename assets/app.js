@@ -88,7 +88,7 @@ var config = {
         console.log(moment(nextTrain).format("hh:mm"));
 
      //appending new train information to the current tran schedule card   
-    var addRow = $("<tr>").append(
+    var addRow = $("<tr>").addClass("newRow").append(
         $("<td>").text(newTrain),
         $("<td>").text(newDestination),
         $("<td>").text(newFrequency),
@@ -101,6 +101,8 @@ var config = {
 
      // Handle the errors
   }, function(errorObject) {
-    console.log("Errors handled: " + errorObject.code);
-
+    console.log("Errors handled: " + errorObject.code);    
   });
+
+
+
