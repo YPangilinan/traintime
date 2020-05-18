@@ -80,7 +80,7 @@ var config = {
    var minutesAway = newFrequency - tRemainder;
 
     //console log time information
-        console.log(firstTimeConverted);
+        console.log(firstTimeConverted.format("hh:mm"));
         console.log(moment(currentTime).format("hh:mm"));
         console.log(timeDifference);
         console.log(tRemainder);
@@ -93,7 +93,7 @@ var config = {
         $("<td>").text(newDestination),
         $("<td>").text(newFrequency),
         $("<td>").text(moment(nextTrain).format("hh:mm")),
-        $("<td>").text(tMinutesTillTrain),
+        $("<td>").text(minutesAway),
 
     );
 
