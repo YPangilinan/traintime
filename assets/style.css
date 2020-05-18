@@ -1,7 +1,7 @@
 nav{
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
-    background-color: #F7A26D;
+    background-color: #3B6285;
     height:90px;
 
 }
@@ -18,3 +18,12 @@ nav{
 #submit{
     background-color: #F7A26D;
 }
+
+.card{
+    border-radius:15px;
+    border:0;
+    background-color: transparent;
+    text-transform: uppercase; 
+  
+}
+
