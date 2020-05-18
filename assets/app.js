@@ -99,4 +99,8 @@ var config = {
 
     $("table tbody").append(addRow);
 
+     // Handle the errors
+  }, function(errorObject) {
+    console.log("Errors handled: " + errorObject.code);
+
   });
