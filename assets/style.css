@@ -24,6 +24,9 @@ nav{
 }
 
 
+#head{
+    background-color:#3B6285 !important;
+}
 
 #cardForm{
     background-color: transparent;
