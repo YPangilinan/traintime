@@ -25,7 +25,6 @@ var config = {
 
     trainName = $("#nameInput").val().trim();
     destination = $("#destinationInput").val().trim();
-    //using moment.js for the initial time
     firstTime = $("#timeInput").val().trim();
     frequency = $("#frequencyInput").val().trim();
 
@@ -42,7 +41,6 @@ var config = {
      $("#destinationInput").val("");
      $("#timeInput").val("");
      $("#frequencyInput").val("");
-
   });
 
   //firebase add child event
@@ -79,7 +77,6 @@ var config = {
    //minutes away till the next train
    var nextTrain = moment().add(minutesAway, "minutes");
    
-
     //console log time information
         console.log(firstTimeConverted.format("hh:mm"));
         console.log(moment(currentTime).format("hh:mm"));
@@ -95,7 +92,6 @@ var config = {
         $("<td>").text(newFrequency),
         $("<td>").text(moment(nextTrain).format("hh:mm")),
         $("<td>").text(minutesAway),
-
     );
 
     $("table tbody").append(addRow);
