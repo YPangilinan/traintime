@@ -1,7 +1,9 @@
+body{
+    background-image: url("images/bg3.jpg");
+}
 nav{
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
-    background-color: #3B6285;
     height:90px;
 
 }
@@ -10,20 +12,20 @@ nav{
     letter-spacing: 1px;
 }
 
-.jumbotron{
-    background-image: url("images/banner.png");
-    height:300px;
-}
-
 #submit{
-    background-color: #F7A26D;
+    background-color: #3B6285;
 }
 
 .card{
     border-radius:15px;
     border:0;
-    background-color: transparent;
     text-transform: uppercase; 
-  
+    background-color: rgba(255,255,255, 0.2) !important;
+}
+
+
+
+#cardForm{
+    background-color: transparent;
 }
 

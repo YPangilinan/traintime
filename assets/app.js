@@ -70,14 +70,15 @@ var config = {
    //difference between current time and next arrival
    var timeDifference = moment().diff(moment(firstTimeConverted), "minutes");
 
-   //minutes away till the next train
-   var nextTrain = moment().add(minutesAway, "minutes");
-   
    //time remainder using difference of times and the frequency. remainder is used for minutes away calculation
    var tRemainder = timeDifference % newFrequency;
 
    // minuites until next train arrives
    var minutesAway = newFrequency - tRemainder;
+
+   //minutes away till the next train
+   var nextTrain = moment().add(minutesAway, "minutes");
+   
 
     //console log time information
         console.log(firstTimeConverted.format("hh:mm"));
